@@ -1,0 +1,11 @@
+[package]
+name = "convexhull"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+num = {version="0.*", default-features = false, features = ["std"]}
+ndarray = {version = "*", default-features = false}
+ndarray-linalg = {version = "*", default-features = false, features = ["intel-mkl-static"] }
